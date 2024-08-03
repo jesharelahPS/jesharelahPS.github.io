@@ -1,0 +1,219 @@
+html, body {
+    font-family: 'Arial', sans-serif;
+    background-color: #170d24;
+    color: hsla(0, 0%, 100%, 0.85);
+    background-image:   radial-gradient(ellipse at 10% 90%,#2c50ac  0%, transparent 55%),
+                        radial-gradient(ellipse at 90% 90%, #b13359 0%, transparent 55%),
+                        radial-gradient(ellipse at 90% 10%,#3c2d83  0%, transparent 55%),
+                        radial-gradient(ellipse at 10% 10%, #4d2e7a 0%, transparent 55%);
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+
+#header, #footer {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#header {
+    color: #ffffff;
+}
+
+#footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#footer #contacts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+#contacts p {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #ffffff;
+    align-items: center;
+}
+
+#page-name {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    height: 50px;
+    width: auto;
+    margin-left: 15px;
+}
+
+#page-name h1 {
+    margin: 5px;
+    font-size: 24px;
+    align-items: center;
+}
+#page-name:hover{
+    cursor: pointer;
+}
+
+#nav-bar{
+    flex: 1;
+    display: flex;
+    justify-content: right;
+    margin-right: 30px;
+}
+
+#nav-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+#nav-list li {
+    display: inline;
+}
+
+#nav-list a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.274);
+}
+
+#nav-list a:hover {
+    background-color: hsla(258, 40%, 11%, 0.486);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#search-container {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin-left: 20px;
+}
+
+#searchbar {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none; 
+    background-color: rgba(255, 255, 255, 0.836);
+    transition: box-shadow 0.5s ease-in-out;
+    transition-delay: 0.3s;
+}
+
+
+#search {
+    padding: 10px 20px;
+    margin-left: 10px;
+    margin-right: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.274);
+    color: #ffffff;
+}
+
+#search:hover {
+    background-color: hsla(258, 40%, 11%, 0.486);
+    cursor: pointer;
+}
+
+#page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    max-width: 800px;
+    width: 100%;
+    overflow: hidden;
+    margin: 30px;
+}
+
+#page:hover{
+    background-color: #46425017;
+    box-shadow: 0 4px 15px  rgba(255, 255, 255, 0.137);
+    transition: box-shadow 0.5s ease-in-out;
+}
+
+main {
+    text-align: center;
+    width: 100%;
+}
+
+#title {
+    margin: 20px 0;
+    font-size: 32px;
+    color: #ffffff;
+}
+
+#singer {
+    margin: 10px 0;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+#lyrics {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #ffffff;
+}
+
+#lyrics b {
+    color: #ffffff;
+}
+
+iframe{
+    border-radius: 16px;
+    margin-top: 15px;
+}
+
+iframe:hover{
+    box-shadow: 0 4px 10px  rgba(255, 255, 255, 0.137);
+    transition: box-shadow 0.3s ease-in-out;
+    transition-delay: 0.3s;
+}
